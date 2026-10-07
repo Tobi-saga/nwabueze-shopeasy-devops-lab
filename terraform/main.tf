@@ -127,7 +127,7 @@ resource "aws_instance" "web" {
     usermod -aG sudo ${var.vm_username}
     # Ubuntu blocks SSH password login by default - turn it on.
     # The file name starts with 01 so it is read before Ubuntu's own settings.
-    echo "PasswordAuthentication yes" > /etc/ssh/sshd_config.d/01-password-auth.conf
+    echo "PasswordAuthentication yes"ss > /etc/ssh/sshd_config.d/01-password-auth.conf
     systemctl restart ssh
   EOF
 

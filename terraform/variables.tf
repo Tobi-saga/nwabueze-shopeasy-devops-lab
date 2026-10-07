@@ -55,5 +55,5 @@ variable "vm_password" {
 variable "ami_id" {
   description = "AMI (operating system image) for the EC2 instance. AMI IDs differ per region - the default is Amazon Linux 2023 in us-east-1; look up a current one in the EC2 console if it fails."
   type        = string
-  default     = "ami-0faa16d12b05418c1"
+  default     = "ami-063bb7911a131fa70"
 }
